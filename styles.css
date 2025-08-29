@@ -72,7 +72,7 @@ ul li::before{
     height: 28px;    
     width: 28px;
     border-radius: 50%;
-    background-image: url(unchecked.avif);
+    background-image: url(../images/unchecked.avif);
     background-size: cover;
     background-position: center;
     top: 16px;
@@ -86,7 +86,7 @@ ul li.checked{
 }
 
 ul li.checked::before{
-    background-image: url(images.jpeg);
+    background-image: url(/images/images.jpeg);
 
 }
 
@@ -105,5 +105,52 @@ ul li span{
 ul li span:hover{
     background-color: #edeef0;
     border-radius: 50%;
-
 }
+#taskCount {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#taskCount h3 {
+    margin: 5px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#finished {
+    color: #28a745; /* Green for finished */
+}
+
+#remaining {
+    color: #ffc107; /* Yellow/Orange for remaining */
+}
+
+
+.clear-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px; /* Space between buttons if you add more later */
+}
+
+.clear-btn {
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    background-color: #dc3545; /* Red color to indicate clearing */
+    color: #fff;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clear-btn:hover {
+    background-color: #c82333;
+}
+
